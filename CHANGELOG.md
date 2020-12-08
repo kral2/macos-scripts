@@ -14,7 +14,7 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
-## [0.2.0] 2020-12-08
+## [0.2.0] - 2020-12-08
 
 ### Added
 
@@ -28,7 +28,7 @@ Given a version number MAJOR.MINOR.PATCH:
 
 - list-installed.sh : outputfile use $HOME as base path
 
-## [0.1.0] 2020-12-03
+## [0.1.0] - 2020-12-03
 
 ### Added
 
