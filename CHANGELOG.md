@@ -14,6 +14,20 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.2.0] 2020-12-08
+
+### Added
+
+- list-installed.sh : list custom taps in use in a seperate section
+
+### Changed
+
+- list-installed.sh : print formulae and casks versions instead of full name that include tap path
+
+### Fixed
+
+- list-installed.sh : outputfile use $HOME as base path
+
 ## [0.1.0] 2020-12-03
 
 ### Added

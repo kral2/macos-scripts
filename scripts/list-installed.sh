@@ -2,7 +2,7 @@
 # Generate output of packages installed with brew (formula & cask), mac AppStore or Setapp
 
 timestamp=$(date +"%Y-%m-%d")
-outfile="/Users/kral2/Documents/macos_installed_packages.md"
+outfile="$HOME/Documents/macos_installed_packages.md"
 
 touch $outfile
 
@@ -22,9 +22,14 @@ echo | cat - $outfile > temp && mv temp $outfile
 echo "## Mac AppStore:" | cat - $outfile > temp && mv temp $outfile
 echo | cat - $outfile > temp && mv temp $outfile
 
+## Custom Brew Taps
+brew list --full-name | grep / | sort | uniq | cat - $outfile > temp && mv temp $outfile
+echo | cat - $outfile > temp && mv temp $outfile
+echo "## Custom Taps in use:" | cat - $outfile > temp && mv temp $outfile
+
 ## Brew Casks
 echo "\`\`\`" | cat - $outfile > temp && mv temp $outfile
-brew list --casks | cat - $outfile > temp && mv temp $outfile
+brew list --versions --casks | cat - $outfile > temp && mv temp $outfile
 echo "\`\`\`bash" | cat - $outfile > temp && mv temp $outfile
 echo | cat - $outfile > temp && mv temp $outfile
 echo "## Brew Casks (GUI):" | cat - $outfile > temp && mv temp $outfile
@@ -32,7 +37,7 @@ echo | cat - $outfile > temp && mv temp $outfile
 
 ## Brew Formula
 echo "\`\`\`" | cat - $outfile > temp && mv temp $outfile
-brew list --formula --full-name | cat - $outfile > temp && mv temp $outfile
+brew list --versions --formulae | cat - $outfile > temp && mv temp $outfile
 echo "\`\`\`bash" | cat - $outfile > temp && mv temp $outfile
 echo | cat - $outfile > temp && mv temp $outfile
 echo "## Brew Formula (CLI):" | cat - $outfile > temp && mv temp $outfile
