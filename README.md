@@ -13,7 +13,10 @@ This is the 2020 reboot of this repository as I am back to mac :-)
 
 Main goal: collect information about the configuration state of the operating system at a given time, and try to rebuild that state when needed (e.g: resintall from scratch).
 
-Secondary goal: enable/disable settings in a reproductible and documented manner
+Secondary goal:
+
+- enable/disable settings in a reproductible and documented manner
+- code my project management workflow
 
 ## Usage
 

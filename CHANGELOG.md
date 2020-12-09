@@ -14,6 +14,18 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.3.0] - 2020-12-09
+
+### Added
+
+- setup_project-folder.sh : create a default project management folder structure
+
+### Changed
+
+Reorganize folder structure:
+
+- scripts renamed to system-config
+
 ## [0.2.0] - 2020-12-08
 
 ### Added
