@@ -1,2 +1,8 @@
+# macOS stuff
 
 .DS_Store
+
+# Files/Folders that should not be published should be put inside a folder named "specifics"
+
+*/specifics/*
+
