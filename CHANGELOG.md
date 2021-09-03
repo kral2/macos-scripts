@@ -14,6 +14,12 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.4.0] - 2021-09-03
+
+## Added
+
+- show-hidden-files.sh: add command usage information  
+
 ## [0.3.0] - 2020-12-09
 
 ### Added
