@@ -14,6 +14,12 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.5.0] - 2021-09-03
+
+## Added
+
+- cpu_info.sh: show cpu specific information (brand, model, core count, thread count)  
+
 ## [0.4.0] - 2021-09-03
 
 ## Added
