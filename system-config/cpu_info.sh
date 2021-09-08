@@ -3,6 +3,8 @@
 # List CPU information
 # https://apple.stackexchange.com/questions/352769/does-macos-have-a-command-to-retrieve-detailed-cpu-information-like-proc-cpuinf/352770
 
+# Also : https://apple.stackexchange.com/questions/238777/how-do-i-identify-which-cpu-a-macbook-uses/238789#238789
+# Interesting output with `system_profiler SPHardwareDataType | grep Processor`
 
 if [ -z "$1" ]; then
     sysctl -n machdep.cpu.brand_string
