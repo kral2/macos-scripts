@@ -6,6 +6,12 @@
 # Also : https://apple.stackexchange.com/questions/238777/how-do-i-identify-which-cpu-a-macbook-uses/238789#238789
 # Interesting output with `system_profiler SPHardwareDataType | grep Processor`
 
+usage () {
+    echo "Usage information: ./cpu_info.sh [--short | --all | --help]"
+	echo "- short: print CPU Brand/Model, Core count, Thread count"
+	echo "- all: print all cpu information"
+}
+
 if [ -z "$1" ]; then
     sysctl -n machdep.cpu.brand_string
     sysctl -a | grep machdep.cpu.core_count | sed 's/machdep.//'
@@ -17,11 +23,7 @@ elif [ "$1" = "--short" ]; then
     sysctl -a | grep machdep.cpu.core_count | sed 's/machdep.//'
     sysctl -a | grep machdep.cpu.thread_count | sed 's/machdep.//'
 elif [ "$1" = "--help" ]; then
-	echo "Usage information: ./cpu_info.sh [short|all]"
-	echo "- short: print CPU Brand/Model, Core count, Thread count"
-	echo "- all: print all cpu information"
+	usage
 else
-	echo "Usage information: ./cpu_info.sh [short|all]"
-	echo "- short: print CPU Brand/Model, Core count, Thread count"
-	echo "- all: print all cpu information"
+    usage
 fi

@@ -14,7 +14,13 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
-## [0.5.0] - 2021-09-03
+## [0.5.1] - 2021-09-08
+
+## Changed
+
+- cpu_info.sh: use bash function for command usage information
+
+## [0.5.0] - 2021-09-08
 
 ## Added
 
