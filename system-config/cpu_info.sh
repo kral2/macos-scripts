@@ -7,9 +7,11 @@
 # Interesting output with `system_profiler SPHardwareDataType | grep Processor`
 
 usage () {
-    echo "Usage information: ./cpu_info.sh [--short | --all | --help]"
-	echo "- short: print CPU Brand/Model, Core count, Thread count"
-	echo "- all: print all cpu information"
+    printf "%s \n" "Usage : ./cpu_info.sh [--short | --all | --help]"
+    printf "\n"
+    printf "%s \n" "--short : print CPU Brand/Model, Core count, Thread count."
+	printf "%s \n" "--all   : print all cpu information."
+    printf "%s \n" "--help  : print this usage message."
 }
 
 if [ -z "$1" ]; then
