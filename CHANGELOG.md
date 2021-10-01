@@ -14,21 +14,27 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.6.0] - 2021-10-01
+
+### Added
+
+- flush_dns.sh: a cli tool to flush macOS DNS cache
+
 ## [0.5.1] - 2021-09-08
 
-## Changed
+### Changed
 
 - cpu_info.sh: use bash function for command usage information
 
 ## [0.5.0] - 2021-09-08
 
-## Added
+### Added
 
 - cpu_info.sh: show cpu specific information (brand, model, core count, thread count)  
 
 ## [0.4.0] - 2021-09-03
 
-## Added
+### Added
 
 - show-hidden-files.sh: add command usage information  
 
