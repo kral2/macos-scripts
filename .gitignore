@@ -2,7 +2,7 @@
 
 .DS_Store
 
-# Files/Folders that should not be published should be put inside a folder named "specifics"
+# Files/Folders that should not be published go inside a folder named "specifics"
 
 */specifics/*
 
