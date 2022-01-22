@@ -9,6 +9,7 @@
         name:
           - coreutils
           - git
+          - gnupg
           - gh
           - tig
           - pre-commit
@@ -24,6 +25,7 @@
           - ipcalc
           - iperf3
           - putty
+          - openssh
           - wget
         state: latest
     - name: install or update homebrew packages | cloud CLIs
