@@ -1,0 +1,37 @@
+---
+
+- name: Preparing the base environment
+  hosts: localhost
+
+  tasks:
+    - name: install or update homebrew packages | development tools
+      community.general.homebrew:
+        name:
+          - coreutils
+          - git
+          - gh
+          - tig
+          - pre-commit
+          - terraform-docs
+          - tmux
+          - jq
+          - tree
+        state: latest
+    - name: install or update homebrew packages | networking tools
+      community.general.homebrew:
+        name:
+          - nmap
+          - ipcalc
+          - iperf3
+          - putty
+          - wget
+        state: latest
+    - name: install or update homebrew packages | cloud CLIs
+      community.general.homebrew:
+        name:
+          - oci-cli
+          - awscli
+          - azure-cli
+          - google-cloud-sdk
+        state: latest
+...

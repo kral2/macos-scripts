@@ -14,6 +14,12 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.7.0] - 2022-01-22
+
+### Added
+
+- ansible playbook to install/update homebrew packages
+
 ## [0.6.0] - 2021-10-01
 
 ### Added
