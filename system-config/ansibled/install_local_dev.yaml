@@ -1,0 +1,14 @@
+---
+
+- name: Preparing the base environment
+  hosts: localhost
+
+  tasks:
+    - name: install or update homebrew packages | development environments
+      community.general.homebrew:
+        name:
+          - kyperkit
+          - podman
+          - minikube
+          - kubectl
+...

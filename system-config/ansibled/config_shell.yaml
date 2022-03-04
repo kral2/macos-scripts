@@ -1,0 +1,10 @@
+---
+
+- name: Configure local shell
+  hosts: localhost
+
+  tasks:
+    - name: Shell setup
+      # get iterm2, ohmyzsh
+
+...

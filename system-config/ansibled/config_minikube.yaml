@@ -1,0 +1,21 @@
+---
+
+- name: Configure Minikube
+  hosts: localhost
+
+  tasks:
+    # - name: install or update homebrew packages | development tools
+# minikube start --driver=hyperkit
+# minikube config set driver hyperkit
+# ps -Af | grep hyperkit
+    - name: Install k8s ecosystem tooling
+      community.general.homebrew:
+        name:
+          - helm
+        state: latest
+    - name: Install kube related HashiCorp stuff
+      community.general.homebrew:
+        name:
+          - hashicorp/tap/consul-k8s
+        state: latest
+...

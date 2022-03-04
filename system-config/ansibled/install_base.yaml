@@ -4,19 +4,24 @@
   hosts: localhost
 
   tasks:
-    - name: install or update homebrew packages | development tools
+    - name: install or update homebrew packages | common *nix tools
       community.general.homebrew:
         name:
           - coreutils
+          - tree
+          - jq
+          - tmux
+        state: latest
+    - name: install or update homebrew packages | development tools (Git Related)
+      community.general.homebrew:
+        name:
           - git
           - gnupg
           - gh
           - tig
           - pre-commit
           - terraform-docs
-          - tmux
-          - jq
-          - tree
+          - warrensbox/tap/tfswitch
         state: latest
     - name: install or update homebrew packages | networking tools
       community.general.homebrew:
@@ -34,6 +39,5 @@
           - oci-cli
           - awscli
           - azure-cli
-          - google-cloud-sdk
         state: latest
 ...
