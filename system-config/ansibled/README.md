@@ -2,6 +2,8 @@
 
 Notes about what's needed to setup a brand new operating system.
 
+> :warning: these playbooks are still experimental, not idempotent at the moment. Particularly true for the `install_gui_apps.yaml` playbook.
+
 ## Initial tasks that should be done asap
 
 - passwordless sudo for system group `admin`

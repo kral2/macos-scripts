@@ -4,7 +4,20 @@
   hosts: localhost
 
   tasks:
+    - name: Allow 'admin' group to have passwordless sudo
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^%admin'
+        line: '%admin ALL=(ALL) NOPASSWD: ALL'
+        validate: visudo -cf %s
+      become: yes
+      become_user: root
     - name: Shell setup
-      # get iterm2, ohmyzsh
-
+      community.general.homebrew:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - zsh # we install zsh with homebrew for prompt theme autolinking
+        - pure
 ...

@@ -21,7 +21,7 @@
           - tig
           - pre-commit
           - terraform-docs
-          - warrensbox/tap/tfswitch
+          # - warrensbox/tap/tfswitch #! broken on m1 macs
         state: latest
     - name: install or update homebrew packages | networking tools
       community.general.homebrew:

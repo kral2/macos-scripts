@@ -4,18 +4,31 @@
   hosts: localhost
 
   tasks:
-    - name: Install IDEs
+    - name: Install 1Password
       community.general.homebrew:
-        name:
-          - visual-studio-code
+        name: 1Password
+        state: latest
+      ignore_errors: yes
+    - name: Install IDEs, Terminal emulator and text editors
+      community.general.homebrew:
+        name: "{{ item }}"
+        state: latest
+        install_options: cask,force
+      with_items:
+        - visual-studio-code
+        - iterm2
+        - notion
+        - setapp
+      ignore_errors: yes
     - name: Install browsers
       community.general.homebrew:
-        name:
-          - firefox
-          - chrome
-          - brave-browser
-          - opera
-          - vivaldi
+        name: "{{ item }}"
         state: latest
-
+      with_items:
+        - firefox
+        - google-chrome
+        - brave-browser
+        - opera
+        - vivaldi
+      ignore_errors: yes
 ...
