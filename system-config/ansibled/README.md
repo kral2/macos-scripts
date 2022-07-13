@@ -1,6 +1,6 @@
 # Baking a fresh macOS system
 
-Notes about what's needed to setup a brand new operating system.
+Notes about what's needed to set up a brand new operating system.
 
 > :warning: these playbooks are still experimental, not idempotent at the moment. Particularly true for the `install_gui_apps.yaml` playbook.
 
@@ -10,11 +10,12 @@ Notes about what's needed to setup a brand new operating system.
 - install homebrew
 - install base homebrew packages: zsh, ansible
 
-From there, ideally all remaining actions should be done using ansible.
+From there, ideally, all remaining actions should be done using Ansible.
 
-Installing zsh with homebrew instead of using /bin/zsh allows for autolinking with some packages (e.g: pure prompt). This, in turn, means we also need to update the user's default shell to use the homebrew zsh.
+Installing zsh with homebrew instead of using /bin/zsh allows for auto-linking with some packages (e.g: pure prompt). This, in turn, means we also need to update the user's default shell to use the homebrew zsh.
 
 ## My preference about some macOS settings
 
 - trackpad tap-to-click.
 - activate nightshift
+- enable universal clipboard in 1Password

@@ -8,6 +8,7 @@
       community.general.homebrew:
         name: 1Password
         state: latest
+        install_options: cask
       ignore_errors: yes
     - name: Install IDEs, Terminal emulator and text editors
       community.general.homebrew:
@@ -18,12 +19,15 @@
         - visual-studio-code
         - iterm2
         - notion
+        - grammarly-desktop
+        - drawio
         - setapp
       ignore_errors: yes
     - name: Install browsers
       community.general.homebrew:
         name: "{{ item }}"
         state: latest
+        install_options: cask
       with_items:
         - firefox
         - google-chrome

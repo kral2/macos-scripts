@@ -39,5 +39,6 @@
           - oci-cli
           - awscli
           - azure-cli
+          - google-cloud-sdk
         state: latest
 ...

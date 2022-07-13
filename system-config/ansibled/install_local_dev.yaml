@@ -4,10 +4,12 @@
   hosts: localhost
 
   tasks:
+    # TODO - name: Install Docker Desktop cask
+    # brew install --cask docker
     - name: install or update homebrew packages | development environments
       community.general.homebrew:
         name:
-          - kyperkit
+          - hyperkit
           - podman
           - minikube
           - kubectl
