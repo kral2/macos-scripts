@@ -11,6 +11,7 @@
           - tree
           - jq
           - tmux
+          - shellcheck
         state: latest
     - name: install or update homebrew packages | development tools (Git Related)
       community.general.homebrew:
