@@ -12,6 +12,7 @@
           - jq
           - tmux
           - shellcheck
+          - watch
         state: latest
     - name: install or update homebrew packages | development tools (Git Related)
       community.general.homebrew:
