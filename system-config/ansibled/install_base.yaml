@@ -11,6 +11,7 @@
           - tree
           - jq
           - tmux
+          - chroma
           - shellcheck
           - watch
         state: latest
@@ -23,6 +24,7 @@
           - tig
           - pre-commit
           - terraform-docs
+          - 1password-cli
           # - warrensbox/tap/tfswitch #! broken on m1 macs
         state: latest
     - name: install or update homebrew packages | networking tools
